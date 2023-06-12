@@ -1,0 +1,101 @@
+:root {
+  --background: #161131;
+  --formBackground: #332A63;
+  --formText: #FFFDEC;
+  --headerFooter: #0D0A22;
+  --textColor: #FFFDEC;
+  --inputFields: #FFFDEC;
+  --inputText: #332A63;
+  --buttonColor: #483F76;
+}
+
+body {
+  @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew&display=swap");
+  background-color: var(--background);
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+}
+body .supportQuestion {
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 28px;
+  color: var(--textColor);
+  margin: auto;
+  width: 42rem;
+  padding: 10px;
+  margin-top: 5rem;
+}
+body .supportQuestion h2 {
+  font-weight: lighter;
+}
+body .indexContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .indexContent form {
+  position: absolute;
+  background-color: var(--formBackground);
+  color: var(--formText);
+  font-size: 28px;
+  width: 40rem;
+  padding: 2rem;
+  padding-top: 2rem;
+  border-radius: 0.3rem 0.3rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+body .indexContent form label {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+body .indexContent form input,
+body .indexContent form textarea {
+  border: 0;
+  background-color: var(--inputFields);
+  height: 5rem;
+  line-height: 1rem;
+  color: var(--inputText);
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-size: 20px;
+  line-height: 2rem;
+  padding: 0.2rem;
+}
+body .indexContent form textarea {
+  height: 20rem;
+}
+body .indexContent form .personalInfo {
+  display: flex;
+  gap: 1rem;
+}
+body .indexContent form .personalInfo .email,
+body .indexContent form .personalInfo .name {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+body .indexContent form .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+body .indexContent form .buttons input {
+  font-size: 28px;
+  margin-top: 1rem;
+  background-color: var(--buttonColor);
+  color: var(--textColor);
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  width: 33%;
+  border: 0;
+}
+body .indexContent form .buttons input:hover {
+  background-color: var(--buttonColor);
+}
+
+.footerContent {
+  background-color: var(--headerFooter);
+  height: 6rem;
+  margin-top: 75vh;
+  color: #ECECEC;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=footer.css.map */
