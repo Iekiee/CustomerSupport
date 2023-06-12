@@ -1,0 +1,39 @@
+@import '../scss/style.scss';
+* {
+    margin: 0;
+}
+.headerContent {
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew&display=swap');
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    font-size: larger;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--headerFooter);
+        // border-bottom-style: solid;
+        // border-color: #1E1E1E;
+        // border-width: .25rem;
+
+
+        li {
+            float: left;
+
+        a {
+         display: block;
+         color: #ECECEC;
+         text-align: center;
+         padding: 1rem 2rem;
+         text-decoration: none;
+         font-weight: bold;
+
+        } a:hover {
+            background-color: #30535b;
+        }
+    }
+
+        
+
+    }
+}

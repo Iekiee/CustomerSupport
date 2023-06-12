@@ -1,0 +1,147 @@
+:root {
+    // darkblue theme
+    --background: #161131;
+    --formBackground: #332A63;
+    --formText: #FFFDEC;
+    --headerFooter: #0D0A22;
+    --textColor: #FFFDEC;
+    --inputFields: #FFFDEC;
+    --inputText: #332A63;
+    --buttonColor: #483F76;
+
+    //light theme
+    // --background: #A9BCC0;
+    // --formBackground: #ECECEC;
+    // --formText: #3D6973;
+    // --headerFooter: #3D6973;
+    // --textColor: #ECECEC;
+    // --inputFields: #A9BCC0; 
+    // --inputText: #A9BCC0;
+    // --buttonColor: #3D6973;
+
+    //redish theme
+    // --background: #180B0B;
+    // --formBackground: #743232;
+    // --formText: #FFFDEC;
+    // --headerFooter: #4E2323;
+    // --textColor: #FFFDEC;
+    // --inputFields: #FFFDEC; 
+    // --inputText: #180B0B;
+    // --buttonColor: #4E2323;
+}
+
+
+
+body {
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew&display=swap');
+    background-color: var(--background);
+    // background-color: red;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+
+    .supportQuestion {
+        font-family: 'IBM Plex Sans Hebrew', sans-serif;
+        font-size: 28px;
+
+        color: var(--textColor);
+        margin: auto;
+        width: 42rem;
+        padding: 10px;
+        margin-top: 5rem;
+
+        h2 {
+            font-weight: lighter;
+        }
+
+    }
+
+    .indexContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+        form {
+         
+
+
+            label {
+                margin-top: 2rem;
+                margin-bottom: .8rem;
+
+            }
+
+            input,
+            textarea {
+                border: 0;
+                background-color: var(--inputFields);
+                height: 5rem;
+
+                line-height: 1rem;
+                color: var(--inputText);
+                font-family: 'IBM Plex Sans Hebrew', sans-serif;
+                font-size: 20px;
+                line-height: 2rem;
+                padding: .2rem;
+            }
+
+            textarea {
+                height: 20rem;
+
+            } 
+              position: absolute;
+
+            background-color: var(--formBackground);
+            color: var(--formText);           
+            font-size: 28px;
+            width: 40rem;
+
+            padding: 2rem;
+            padding-top: 2rem;
+            border-radius: .3rem .3rem 0rem 0rem;
+
+            display: flex;
+            flex-direction: column;
+
+
+            .personalInfo {
+                display: flex;
+                gap: 1rem;
+
+                .email,
+                .name {
+                    display: flex;
+                    width: 50%;
+                    flex-direction: column;
+
+                }
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+
+                input {
+                    // color: #3D6973;
+                    font-size: 28px;
+
+                    margin-top: 1rem;
+                    background-color: var(--buttonColor);
+                    color: var(--textColor);                  
+                    padding: .5rem 2rem .5rem 2rem;
+                    width: 33%;
+                    border: 0;
+                }
+
+                input:hover {
+                    background-color: var(--buttonColor);
+
+                }
+
+            }
+        }
+    }
+
+
+}
